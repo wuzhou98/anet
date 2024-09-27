@@ -1,16 +1,15 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.29403.142
+# Visual Studio Version 17
+VisualStudioVersion = 17.1.32104.313
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Anet", "Anet\Anet.csproj", "{ED670328-88E3-41DF-98D2-4DEA96C976DB}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Anet.Job", "Anet.Job\Anet.Job.csproj", "{60141E6E-98B1-4FB2-9A5D-80882AA05055}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Anet.Web", "Anet.Web\Anet.Web.csproj", "{41F97159-01FD-49F4-91B8-D25800078D15}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "solution items", "solution items", "{6BC8D288-5768-4CEE-86F6-F80AA0828DF5}"
 	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
 		.gitignore = .gitignore
 		build.cmd = build.cmd
 		build.ps1 = build.ps1
@@ -18,19 +17,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "solution items", "solution 
 		share.props = share.props
 	EndProjectSection
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Migrator", "tools\Migrator\Migrator.csproj", "{93062E27-965A-45A9-8F3E-499DFCD07DB1}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tools", "tools", "{88AB0EA7-AC04-4FB3-87B1-10999EB9C373}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{BDFD7372-3617-461D-9910-D345994D3060}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Anet.Tests", "tests\Anet.Tests\Anet.Tests.csproj", "{9865A3FF-3FD0-43AA-900D-EC54E2409B5C}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sample.Job", "Sample.Job\Sample.Job.csproj", "{B101444D-49BB-4CFA-8353-18816D26F26A}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sample.Web", "Sample.Web\Sample.Web.csproj", "{9CCA70E1-3067-498E-8FF5-2F03688E6820}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Anet.Data", "Anet.Data\Anet.Data.csproj", "{EFACFFB2-B6A1-4103-B38C-FF1064959BE8}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tests", "Tests\Tests.csproj", "{AAEFB83E-5939-443B-9FB0-CD11E8DB6AD5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -42,41 +29,17 @@ Global
 		{ED670328-88E3-41DF-98D2-4DEA96C976DB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{ED670328-88E3-41DF-98D2-4DEA96C976DB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{ED670328-88E3-41DF-98D2-4DEA96C976DB}.Release|Any CPU.Build.0 = Release|Any CPU
-		{60141E6E-98B1-4FB2-9A5D-80882AA05055}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{60141E6E-98B1-4FB2-9A5D-80882AA05055}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{60141E6E-98B1-4FB2-9A5D-80882AA05055}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{60141E6E-98B1-4FB2-9A5D-80882AA05055}.Release|Any CPU.Build.0 = Release|Any CPU
 		{41F97159-01FD-49F4-91B8-D25800078D15}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{41F97159-01FD-49F4-91B8-D25800078D15}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{41F97159-01FD-49F4-91B8-D25800078D15}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{41F97159-01FD-49F4-91B8-D25800078D15}.Release|Any CPU.Build.0 = Release|Any CPU
-		{93062E27-965A-45A9-8F3E-499DFCD07DB1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{93062E27-965A-45A9-8F3E-499DFCD07DB1}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{93062E27-965A-45A9-8F3E-499DFCD07DB1}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{93062E27-965A-45A9-8F3E-499DFCD07DB1}.Release|Any CPU.Build.0 = Release|Any CPU
-		{9865A3FF-3FD0-43AA-900D-EC54E2409B5C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{9865A3FF-3FD0-43AA-900D-EC54E2409B5C}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{9865A3FF-3FD0-43AA-900D-EC54E2409B5C}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{9865A3FF-3FD0-43AA-900D-EC54E2409B5C}.Release|Any CPU.Build.0 = Release|Any CPU
-		{B101444D-49BB-4CFA-8353-18816D26F26A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{B101444D-49BB-4CFA-8353-18816D26F26A}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{B101444D-49BB-4CFA-8353-18816D26F26A}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{B101444D-49BB-4CFA-8353-18816D26F26A}.Release|Any CPU.Build.0 = Release|Any CPU
-		{9CCA70E1-3067-498E-8FF5-2F03688E6820}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{9CCA70E1-3067-498E-8FF5-2F03688E6820}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{9CCA70E1-3067-498E-8FF5-2F03688E6820}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{9CCA70E1-3067-498E-8FF5-2F03688E6820}.Release|Any CPU.Build.0 = Release|Any CPU
-		{EFACFFB2-B6A1-4103-B38C-FF1064959BE8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{EFACFFB2-B6A1-4103-B38C-FF1064959BE8}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{EFACFFB2-B6A1-4103-B38C-FF1064959BE8}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{EFACFFB2-B6A1-4103-B38C-FF1064959BE8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AAEFB83E-5939-443B-9FB0-CD11E8DB6AD5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AAEFB83E-5939-443B-9FB0-CD11E8DB6AD5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AAEFB83E-5939-443B-9FB0-CD11E8DB6AD5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AAEFB83E-5939-443B-9FB0-CD11E8DB6AD5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
-	EndGlobalSection
-	GlobalSection(NestedProjects) = preSolution
-		{93062E27-965A-45A9-8F3E-499DFCD07DB1} = {88AB0EA7-AC04-4FB3-87B1-10999EB9C373}
-		{9865A3FF-3FD0-43AA-900D-EC54E2409B5C} = {BDFD7372-3617-461D-9910-D345994D3060}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {3380AE0E-41C5-4701-9A2B-5E65F82945A3}

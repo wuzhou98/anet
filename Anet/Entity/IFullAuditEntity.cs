@@ -1,15 +1,12 @@
-﻿using System;
+﻿namespace Anet.Entity;
 
-namespace Anet.Entity
+public interface IFullAuditEntity<TKey> : IAuditEntity<TKey>
+    where TKey : IEquatable<TKey>
 {
-    public interface IFullAuditEntity<TKey> : IAuditEntity<TKey>
-        where TKey : IEquatable<TKey>
-    {
-        TKey CreatedBy { get; set; }
-        TKey UpdatedBy { get; set; }
-    }
+    TKey CreatedBy { get; set; }
+    TKey UpdatedBy { get; set; }
+}
 
-    public interface IFullAuditEntity : IFullAuditEntity<long>, IAuditEntity
-    {
-    }
+public interface IFullAuditEntity : IFullAuditEntity<long>, IAuditEntity
+{
 }
